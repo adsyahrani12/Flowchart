@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="JowoCoder"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-12-04 01:03:52 "/>
+        <attribute name="created" value="Sm93b0NvZGVyO0xPQ0FMLUhFQVJUOzIwMTktMTItMDQ7IjEyOjU5OjMzICI7Mjg4NQ=="/>
+        <attribute name="edited" value="Sm93b0NvZGVyO0xPQ0FMLUhFQVJUOzIwMTktMTItMDQ7IjAxOjAzOjUyICI7MTsyOTgx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="bnykBil, Total, Awal, Simpan" type="Integer" array="False" size=""/>
+            <assign variable="Total" expression="0"/>
+            <assign variable="Awal" expression="1"/>
+            <assign variable="Simpan" expression="0"/>
+            <output expression="&quot;Masukkan banyak bilangan fibonacci yang ingin ditampilkan&quot;" newline="True"/>
+            <input variable="bnykBil"/>
+            <while expression="bnykBil &gt; 0">
+                <assign variable="Total" expression="Awal+Simpan"/>
+                <assign variable="Awal" expression="Simpan"/>
+                <assign variable="Simpan" expression="Total"/>
+                <output expression="Total" newline="True"/>
+                <assign variable="bnykBil" expression="bnykBil-1"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>
